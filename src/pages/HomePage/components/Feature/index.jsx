@@ -52,6 +52,16 @@ export default class Feature extends Component {
     return (
       <div style={styles.container}>
         <Row wrap style={styles.content}>
+          <Col xxs="12" s="6" l="8" style={styles.item} />
+          <Col xxs="12" s="6" l="8" style={styles.item}>
+            <img src="https://img.lsznb.cn/images/group.png" style={styles.pic} alt="" />
+            <h3 style={styles.title}>会长团</h3>
+            <p style={styles.desc}>会长团由1名会长、1名顾问以及3名副会长组成，主要工作是负责宣委大大小小的事务，安排相关工作，定期召开内部会议，协助学院以及其他机构开展宣传工作，组织策划活动，当好宣传者的角色，传达指导老师吩咐的工作以及消息，并且做好机构内部以及与外部的沟通交流。</p>
+          </Col>
+          <Col xxs="12" s="6" l="8" style={styles.item} />
+        </Row>
+        <br />
+        <Row wrap style={styles.content}>
           {dataSource.map((item, index) => {
             return (
               <Col xxs="12" s="6" l="8" key={index} style={styles.item}>
@@ -82,13 +92,15 @@ const styles = {
   },
   pic: {
     width: '80px',
-    marginBottom: '30px',
+    marginBottom: '20px',
   },
   title: {
     fontWeight: 'bold',
   },
   desc: {
+    marginBottom: '10px',
     lineHeight: '22px',
+    fontSize: '13px',
     color: '#999',
   },
 };

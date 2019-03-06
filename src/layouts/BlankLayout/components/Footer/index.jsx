@@ -9,6 +9,11 @@ const Footer = () => {
       <div style={styles.content}>
         <Row>
           <Col l="8">
+            <img
+              src={require('./single.png')}
+              alt="logo"
+              width="130px"
+            />
             <h3 style={styles.title}>关于我们</h3>
             <div style={styles.nav}>
               <a style={styles.link}>申请制度</a>
@@ -18,7 +23,7 @@ const Footer = () => {
           <Col l="8">
             <h3 style={styles.title}>关注</h3><h3 style={styles.title}>“岭师信息菌”</h3>
             <img
-              src="https://ice.alicdn.com/assets/images/qrcode.png"
+              src={require('./lsxxj.jpg')}
               alt="qr-code"
               style={styles.qrcode}
             />
@@ -26,7 +31,7 @@ const Footer = () => {
           <Col l="8">
             <h3 style={styles.title}>关注</h3><h3 style={styles.title}>“信息工程学院”</h3>
             <img
-              src="https://ice.alicdn.com/assets/images/qrcode.png"
+              src={require('./xxgcxy.jpg')}
               alt="qr-code"
               style={styles.qrcode}
             />
@@ -67,7 +72,7 @@ const styles = {
     borderRadius: '4px',
   },
   copyRight: {
-    paddingTop: '100px',
+    paddingTop: '30px',
     textAlign: 'center',
     fontSize: '15px',
   },

@@ -20,7 +20,7 @@ export default class Header extends Component {
       <div className={styles.header}>
         <div className={styles.logo}>
           <Link to="/" className={styles.logoLink}>
-            宣委会
+            <img src={require('./logo.png')} alt="xwh-logo" height="40px" />
           </Link>
         </div>
         <ul className={styles.nav}>

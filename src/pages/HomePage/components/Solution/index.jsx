@@ -8,6 +8,10 @@ export default class Solution extends Component {
     this.state = {};
   }
 
+  static contact = () => {
+    alert('调试中');
+  };
+
   render() {
     return (
       <div style={styles.container}>
@@ -24,7 +28,7 @@ export default class Solution extends Component {
             <p style={styles.desc}>
               需要联系我们？请点击下方链接
             </p>
-            <a href="#" style={styles.link}>
+            <a onClick={Solution.contact} style={styles.link}>
               联系我们
             </a>
           </div>
